@@ -35,6 +35,16 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
             this.tabForm = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboUnidade = new System.Windows.Forms.ComboBox();
+            this.txtImposto = new System.Windows.Forms.TextBox();
+            this.txtPreco = new System.Windows.Forms.TextBox();
+            this.txtNomeProduto = new System.Windows.Forms.TextBox();
+            this.txtIdProduto = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
@@ -109,6 +119,16 @@
             // 
             // tabForm
             // 
+            this.tabForm.Controls.Add(this.label5);
+            this.tabForm.Controls.Add(this.label4);
+            this.tabForm.Controls.Add(this.label3);
+            this.tabForm.Controls.Add(this.label2);
+            this.tabForm.Controls.Add(this.label1);
+            this.tabForm.Controls.Add(this.cboUnidade);
+            this.tabForm.Controls.Add(this.txtImposto);
+            this.tabForm.Controls.Add(this.txtPreco);
+            this.tabForm.Controls.Add(this.txtNomeProduto);
+            this.tabForm.Controls.Add(this.txtIdProduto);
             this.tabForm.Controls.Add(this.btnSalvar);
             this.tabForm.Controls.Add(this.btnCancelar);
             this.tabForm.Location = new System.Drawing.Point(4, 24);
@@ -118,6 +138,99 @@
             this.tabForm.TabIndex = 1;
             this.tabForm.Text = "Cadastro";
             this.tabForm.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(253, 254);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(115, 15);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Aliquota de Imposto";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(44, 254);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(37, 15);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Preço";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(44, 163);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 15);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Unidade";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(44, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 15);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Nome do Produto";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(44, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 15);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "ID do Produto";
+            // 
+            // cboUnidade
+            // 
+            this.cboUnidade.FormattingEnabled = true;
+            this.cboUnidade.Items.AddRange(new object[] {
+            "Arroba",
+            "Caixa",
+            "Fardo",
+            "Kg",
+            "Litro",
+            "Lote",
+            "Pacote",
+            "Saca",
+            "Tonelada",
+            "Unidade"});
+            this.cboUnidade.Location = new System.Drawing.Point(44, 190);
+            this.cboUnidade.Name = "cboUnidade";
+            this.cboUnidade.Size = new System.Drawing.Size(152, 23);
+            this.cboUnidade.TabIndex = 8;
+            // 
+            // txtImposto
+            // 
+            this.txtImposto.Location = new System.Drawing.Point(253, 280);
+            this.txtImposto.Name = "txtImposto";
+            this.txtImposto.Size = new System.Drawing.Size(110, 23);
+            this.txtImposto.TabIndex = 7;
+            // 
+            // txtPreco
+            // 
+            this.txtPreco.Location = new System.Drawing.Point(44, 280);
+            this.txtPreco.Name = "txtPreco";
+            this.txtPreco.Size = new System.Drawing.Size(152, 23);
+            this.txtPreco.TabIndex = 6;
+            // 
+            // txtNomeProduto
+            // 
+            this.txtNomeProduto.Location = new System.Drawing.Point(44, 115);
+            this.txtNomeProduto.Name = "txtNomeProduto";
+            this.txtNomeProduto.Size = new System.Drawing.Size(542, 23);
+            this.txtNomeProduto.TabIndex = 5;
+            // 
+            // txtIdProduto
+            // 
+            this.txtIdProduto.Enabled = false;
+            this.txtIdProduto.Location = new System.Drawing.Point(44, 45);
+            this.txtIdProduto.Name = "txtIdProduto";
+            this.txtIdProduto.Size = new System.Drawing.Size(152, 23);
+            this.txtIdProduto.TabIndex = 4;
             // 
             // btnSalvar
             // 
@@ -163,6 +276,7 @@
             this.tabDados.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabForm.ResumeLayout(false);
+            this.tabForm.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -179,5 +293,15 @@
         private DataGridView dataGridView1;
         private Button btnSalvar;
         private Button btnCancelar;
+        private Label label5;
+        private Label label4;
+        private Label label3;
+        private Label label2;
+        private Label label1;
+        private ComboBox cboUnidade;
+        private TextBox txtImposto;
+        private TextBox txtPreco;
+        private TextBox txtNomeProduto;
+        private TextBox txtIdProduto;
     }
 }

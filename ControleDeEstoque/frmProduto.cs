@@ -40,7 +40,7 @@ namespace ControleDeEstoque
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-
+            Uteis.MensagemConfirmacao("Todos os campos devem ser preenchidos");
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
